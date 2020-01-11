@@ -1,16 +1,16 @@
-package com.example.tomodachischedule.ui.notifications;
+package com.example.tomodachischedule.ui.quest;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class QuestsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public QuestsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is quests fragment");
     }
 
     public LiveData<String> getText() {
