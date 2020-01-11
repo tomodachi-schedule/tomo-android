@@ -6,24 +6,26 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_quest"
+        android:name="com.example.tomodachischedule.ui.quest.QuestsFragment"
+        android:label="@string/title_quests"
+        tools:layout="@layout/fragment_quest" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.tomodachischedule.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
-    </fragment>
+        tools:layout="@layout/activity_main" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_store"
         android:name="com.example.tomodachischedule.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.tomodachischedule.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_prefs"
+        android:name="com.example.tomodachischedule.ui.quest.QuestsFragment"
+        android:label="@string/title_preferences"
+        tools:layout="@layout/fragment_prefs" />
 </navigation>
